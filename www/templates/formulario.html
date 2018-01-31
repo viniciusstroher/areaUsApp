@@ -1,0 +1,25 @@
+<ion-view hide-nav-bar="true">
+  <ion-content class="padding has-header-false">
+      
+      <div class="list list-inset" align="center">
+          
+          <div style="text-align: left;width: 100%;margin-bottom: 10px;font-weight: 700;font-size: 20px">
+            <i class="ion-home"></i> Café da Republica.</div>
+          <div style="text-align: left;width: 100%;margin-bottom: 10px;font-weight: 700">
+           <i class="ion-ios-location"></i> R da Republica, 500,Centro - Porto Alegre.</div>
+          <div style="text-align: left;width: 100%;margin-bottom: 10px;font-weight: 700;font-size: 20px">
+           <i class="ion-social-usd-outline"></i> Cashback de 5%.</div>
+          
+  
+          <label class="item item-input">
+            <input type="text" placeholder="Número da carteira (Hash)">
+          </label>
+          <label class="item item-input">
+            <i class="ion-social-bitcoin"></i><input type="number" placeholder="Valor" step="any">
+          </label>
+          <button class="button button-balanced" style="width: 100%;margin-top: 20px" ng-click="enviarPagamento()">
+            <i class="ion-checkmark-circled"></i> Enviar
+          </button>
+      </div>
+  </ion-content>
+</ion-view>
