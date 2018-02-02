@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="br.com.bringupapp" version="2.7" versionCode="2007" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>AREUS</name>
+    <description>
+    </description>
+    <author email="areus@gmail.com" href="http://www.google.com.br/">
+        AREUS
+    </author>
+    
+    <content src="index.html" />
+
+	<preference name="phonegap-version" value="cli-7.1.0" />
+	<preference name="pgb-builder-version" value="1" />
+    <preference name="android-build-tool" value="gradle" />
+    <preference name="permissions" value="none" />
+    <preference name="orientation" value="default" />
+    <preference name="target-device" value="universal" />
+    <preference name="fullscreen" value="false" />
+    <preference name="webviewbounce" value="true" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="stay-in-webview" value="true" />
+    <preference name="detect-data-types" value="true" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="disable-cursor" value="false" />
+    <preference name="android-installLocation" value="auto" />
+    <preference name="StatusBarOverlaysWebView" value="true"/>
+    <preference name="StatusBarStyle" value="default" />
+    <preference name="StatusBarBackgroundColor" value="#000000" />
+    <preference name="KeepRunning" value="false"/>
+    <preference name="EnableViewportScale" value="true"/>
+    <preference name="DisallowOverscroll" value="true"/>
+    <preference name="android-minSdkVersion" value="15"/>
+    <preference name="android-installLocation" value="auto" />
+    <preference name="loadUrlTimeoutValue" value="700000" />  
+    
+   
+    <plugin spec="https://github.com/phonegap/phonegap-plugin-barcodescanner" />
+
+</widget>
