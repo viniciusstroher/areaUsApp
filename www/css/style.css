@@ -1,4 +1,4 @@
 /* Empty. Add your own CSS if you like */
-body > ion-nav-view > ion-view > ion-content > div{
+body > ion-nav-view > ion-view > ion-content.tela-formulario > div{
 	height: 100vh;
 }
