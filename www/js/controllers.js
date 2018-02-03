@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('FormularioCtrl', function($scope,$state,$rootScope,$q,$timeout,$ionicLoading) {
+.controller('FormularioCtrl', function($scope,$state,$rootScope,$q,$timeout,$ionicLoading,$ionicPopup) {
   
   $rootScope.scanQR = function(){
      $scope.carregandoQR = false;
@@ -66,9 +66,17 @@ angular.module('starter.controllers', [])
      });
   }
 
-
+ 
   $scope.enviarPagamento = function(){
-    $state.go("pagamentoefetuado");
+    $scope.valor = document.querySelector("input").value;
+    if($scope.valor != "" && $scope.valor != 0 && $scope.valor > 0){
+      $state.go("pagamentoefetuado");
+    }else{
+      $ionicPopup.alert({
+          title:  'O valor deve ser maior que zero.',
+          buttons: [{ text: "Ok"}]
+      });
+    }
   }
 
 })
