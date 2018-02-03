@@ -1,5 +1,5 @@
 <ion-view hide-nav-bar="true" ng-init="initQR()">
-  <ion-content class="padding has-header-false" ng-show="carregandoQR">
+  <ion-content class="padding has-header-false" ng-show="carregandoQR" scroll="false" style="height: 100vh" >
       
       <div class="list list-inset" align="center">
           <h2>
@@ -21,9 +21,13 @@
             <i class="ion-social-bitcoin"></i><input type="number" placeholder="Valor" step="any">
           </label>
           <br/>
-          <button class="button button-balanced" style="width: 100%;margin-top: 20px" ng-click="enviarPagamento()">
+         
+      </div>
+      <div class="bar bar-footer">
+         <button class="button button-balanced" style="width: 100%;margin-top: 20px;position: absolute;bottom: 35px" ng-click="enviarPagamento()">
             <i class="ion-checkmark-circled"></i> Enviar
           </button>
       </div>
   </ion-content>
+
 </ion-view>
