@@ -1,28 +1,37 @@
-<ion-view hide-nav-bar="true" ng-init="initQR()">
-  <ion-content class="padding has-header-false tela-formulario" ng-show="carregandoQR" scroll="false" style="height: 100vh" >
+<ion-view hide-nav-bar="true" ng-init="initQR()" style="background: #1A2239">
+  <ion-content class="padding has-header-false tela-formulario" ng-show="carregandoQR" scroll="false" style="height: 100vh;color:white" >
       
-      <div class="list list-inset" align="center">
-          <h2>
+      <div class="list list-inset" align="center" style="background: #1A2239">
+          <!-- <h2>
             <i class="ion-social-bitcoin"></i> areUS
-          </h2>
-          <br/><br/>
-          <div style="text-align: left;width: 100%;margin-bottom: 10px;font-weight: 700;font-size: 20px">
-            <i class="ion-home"></i> Café da Republica.</div>
-          <div style="text-align: left;width: 100%;margin-top: 10px;font-weight: 700">
-           <i class="ion-ios-location"></i> R da Republica, 500,Centro - Porto Alegre.</div>
-          <div style="text-align: left;width: 100%;margin-bottom: 10px;font-weight: 700;font-size: 20px">
-           <i class="ion-social-usd-outline"></i> Cashback de 5%.</div>
+          </h2> -->
+          <br/><br/><br/><br/>
+          <div style="width: 100%;display: flex;justify-content: center;align-items: center">
+            <div style="width: 70%;font-size: 15px;">
+                <div style="text-align: left;">
+                 de minha carteira para: Carteira #54353343hf3423c
+                </div>
+                <br/><br/><br/>
+                <div style="text-align: left;width: 100%;">
+                  Café da República <br/>
+               
+                  Rua da República, 500 Centro, <br/>
+                
+                  Porto Alegre, Rio Grande do Sul 
+                </div>
+                <br/><br/>
+
+                <div style="display:flex;flex-direction: row;">
+                    <div style="width: 20%">Valor:</div> <div><input type="number" step="0.01" style="border-radius:6px;background: #48567dad;margin-top: -5px;margin-left: 10px" /></div>
+                </div>
+            </div>
+              
+          </div>
+
+
           
         <br/>
-          <div align="left">
-            <i class="ion-bag"></i> <b>Endereço Carteira,</b> <span>17SkEw2md5avVNyYgj6RiXuQKNwkXaxFyQ</span>
-          </label>
-          <label class="item item-input">
-            <i class="ion-social-bitcoin"></i><input type="number" placeholder="Valor" step="any" value="0.1">
-          </label>
-          <br/>
-         
-      </div>
+        
       <div class="bar bar-footer">
          <button class="button button-balanced" style="width: 100%;margin-top: 20px;position: absolute;bottom: 35px" ng-click="enviarPagamento()">
             <i class="ion-checkmark-circled"></i> Enviar
