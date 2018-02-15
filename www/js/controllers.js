@@ -81,8 +81,10 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('PagamentoEfetuadoCtrl', function($scope) {
-  
+.controller('PagamentoEfetuadoCtrl', function($scope,$state) {
+    $scope.voltar = function(){
+      $state.go("formulario");
+    };
 })
 
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
