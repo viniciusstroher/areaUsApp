@@ -35,13 +35,6 @@
     <preference name="ScrollEnabled" value="false" />
     <preference name="android-minSdkVersion" value="16" />
     
-    <preference name="BackupWebStorage" value="none" />
-    <preference name="SplashMaintainAspectRatio" value="true" />
-    <preference name="FadeSplashScreenDuration" value="300" />
-    <preference name="SplashShowOnlyFirstTime" value="false" />
-    <preference name="SplashScreen" value="splash" />
-    <preference name="SplashScreenDelay" value="3000" />
-    
     <icon src="resources/icon.png" />
     <splash src="splash.png" />
     <platform name="android">
@@ -66,6 +59,15 @@
         <splash density="port-xxxhdpi" src="resources/android/splash/drawable-port-xxxhdpi-screen.png" />
     </platform>
 
+
+     
+    <preference name="SplashScreen" value="splash" />
+    <preference name="SplashScreenDelay" value="10000" />
+    <preference name="SplashShowOnlyFirstTime" value="false"/>
+    <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+   
+    
     <plugin spec="https://github.com/phonegap/phonegap-plugin-barcodescanner" />
     <plugin spec="https://github.com/w3get/cordova-plugin-splashscreen" />
 </widget>
