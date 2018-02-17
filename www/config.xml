@@ -63,7 +63,7 @@
     <plugin spec="https://github.com/w3get/cordova-plugin-network-information" />
     <plugin spec="https://github.com/w3get/cordova-plugin-device" />
      
-    <preference name="SplashScreenDelay" value="2000"/>
+    <preference name="SplashScreenDelay" value="5000"/>
     <preference name="FadeSplashScreenDuration" value="0"/>
     <preference name="SplashScreen" value="screen"/>
     <preference name="ShowSplashScreenSpinner" value="false"/>
@@ -73,8 +73,8 @@
     <feature name="SplashScreen">
         <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
     </feature>
-    
-        <access origin="*" browserOnly="true" />
+    <preference name="fullscreen" value="true" />
+    <access origin="*" browserOnly="true" />
     <allow-navigation href="*://*.brupperfilpro.blob.core.windows.net/*"/>
     <allow-navigation href="*://*.brupperfildesenv.blob.core.windows.net/*"/>
     <allow-navigation href="*://*.w3host.no-ip.org/*"/>
