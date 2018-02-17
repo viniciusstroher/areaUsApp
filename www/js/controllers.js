@@ -27,7 +27,7 @@ angular.module('starter.controllers', [])
     };
 })
 
-.controller('InicialCtrl', function($scope,$state,$rootScope,$ionicLoading,$q) {
+.controller('InicialCtrl', function($scope,$state,$rootScope,$ionicLoading,$q,$timeout) {
   $scope.initQR = function(){
      $rootScope.scanQR().then(function(){
         $state.go("formulario");
