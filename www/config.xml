@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="br.com.areus" version="2.7" versionCode="2007" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="br.com.areus" version="2.7" versionCode="2007" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>AREUS</name>
     <description>
     </description>
@@ -73,7 +73,7 @@
     <feature name="SplashScreen">
         <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
     </feature>
-    <preference name="fullscreen" value="true" />
+   
     <access origin="*" browserOnly="true" />
     <allow-navigation href="*://*.brupperfilpro.blob.core.windows.net/*"/>
     <allow-navigation href="*://*.brupperfildesenv.blob.core.windows.net/*"/>
@@ -86,4 +86,14 @@
     <access origin="*" />
     <allow-intent href="*" />
     <allow-navigation href="*" />
+
+    <gap:config-file platform="android" parent="/manifest">
+      <supports-screens 
+      android:xlargeScreens="false" 
+      android:largeScreens="false" 
+      android:smallScreens="false" />
+      <application android:theme="@android:style/Theme.NoTitleBar" >
+      <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" ></activity>
+      </application>
+    </gap:config-file>
 </widget>
