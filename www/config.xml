@@ -62,6 +62,7 @@
     <plugin spec="https://github.com/w3get/ionic-plugin-keyboard" />
     <plugin spec="https://github.com/w3get/cordova-plugin-network-information" />
     <plugin spec="https://github.com/w3get/cordova-plugin-device" />
+    <plugin spec="https://github.com/phonegap/phonegap-plugin-local-notification" />
      
     <preference name="SplashScreenDelay" value="5000"/>
     <preference name="FadeSplashScreenDuration" value="0"/>

@@ -27,6 +27,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
+
+    if ("Notification" in window) {
+      Notification.requestPermission(function (permission) {
+        // If the user accepts, let’s create a notification
+        if (permission === "granted") {
+         
+        }
+      });
+    }
+
   });
 
   

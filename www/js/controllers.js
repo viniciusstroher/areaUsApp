@@ -20,10 +20,20 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('PagamentoEfetuadoCtrl', function($scope,$state) {
+.controller('PagamentoEfetuadoCtrl', function($scope,$state,$timeout){
     $scope.voltar = function(){
       $state.go("formulario");
     };
+
+    $timeout(function() {
+       var notification = new Notification("Cashback recebido", {
+           body: "Você recebeu seu cashback" 
+      }); 
+
+      notification.onshow  = function() { console.log('show'); };
+      notification.onclose = function() { console.log('close'); };
+      notification.onclick = function() { console.log('click'); };
+    },5000);
 })
 
 .controller('InicialCtrl', function($scope,$state,$rootScope,$ionicLoading,$q,$timeout) {
