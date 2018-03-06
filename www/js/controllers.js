@@ -26,14 +26,13 @@ angular.module('starter.controllers', [])
     };
 
     $scope.$on( "$ionicView.enter", function( scopes, states ) {
-        var now             = new Date().getTime(),
+        var now             = new Date().getTime();
             // 5 segs a mais
 
         cordova.plugins.notification.local.schedule({
-            title: "Areus"
+            title: "Areus",
 
             text: "Você recebeu seu cashback",
-            at:   new Date(now + 5*1000),
             led: "FF0000",
             sound: null
         });
