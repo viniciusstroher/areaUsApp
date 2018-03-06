@@ -34,7 +34,11 @@ angular.module('starter.controllers', [])
 
             text: "Você recebeu seu cashback",
             led: "FF0000",
-            sound: null
+            sound: true,
+            vibrate: true,
+            trigger: { in: 3, unit: 'second' }
+
+
         });
     });
 })
