@@ -25,15 +25,19 @@ angular.module('starter.controllers', [])
       $state.go("formulario");
     };
 
-    $timeout(function() {
-       var notification = new Notification("Cashback recebido", {
-           body: "Você recebeu seu cashback" 
-      }); 
+    $scope.$on( "$ionicView.enter", function( scopes, states ) {
+        var now             = new Date().getTime(),
+            // 5 segs a mais
 
-      notification.onshow  = function() { console.log('show'); };
-      notification.onclose = function() { console.log('close'); };
-      notification.onclick = function() { console.log('click'); };
-    },5000);
+        cordova.plugins.notification.local.schedule({
+            title: "Areus"
+
+            text: "Você recebeu seu cashback",
+            at:   new Date(now + 5*1000),
+            led: "FF0000",
+            sound: null
+        });
+    });
 })
 
 .controller('InicialCtrl', function($scope,$state,$rootScope,$ionicLoading,$q,$timeout) {
